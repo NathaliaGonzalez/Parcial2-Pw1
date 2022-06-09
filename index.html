@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>PW1</title>
+</head>
+
+<body>
+    <section class="layout">
+        <div class="elementos">
+            <h2>ELEMENTOS</h2>
+            <button id="boton" onclick="agregarbtn()">Boton</button>
+        </div>
+        <div class="body" id="body">
+
+        </div>
+        <div class="estilos">
+            <h2>ESTILOS</h2>
+            Tamaño<br>
+            <input type="radio" name="tamaño" value="1" onclick="tamano('pequeno')">Pequeño
+            <br>
+            <input type="radio" name="tamaño" value="2" onclick="tamano('mediano')">Mediano
+            <br>
+            <input type="radio" name="tamaño" value="3" onclick="tamano('grande')">Grande
+            <br><br>
+            Color de fondo<br>
+            <input type="color" name="" id="color" onchange="color()"><br><br>
+            Color de texto <br>
+            <input type="color" name="" id="colorletra" onchange="colorletra()"><br><br>
+            Estilo del borde <br>
+            <select name="borde" id="border" onchange="border()">
+                <option value="ini">--------------</option>
+                <option value="none">border-style: none</option>
+                <option value="dotted">border-style: dotted</option>
+                <option value="inset">border-style: inset</option>
+                <option value="solid">border-style: dashed solid</option>
+            </select>
+            Color de borde <br>
+            <input type="color" name="" id="colorborde" onchange="colorborde()"><br><br>
+
+        </div>
+    </section>
+</body>
+
+</html>

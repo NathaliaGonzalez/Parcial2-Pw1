@@ -1,0 +1,26 @@
+.layout {
+    width: 100%;
+    height: 768px;
+
+    display: grid;
+    grid:
+        "elementos body estilos" auto / auto 1fr auto;
+    gap: 8px;
+}
+
+.elementos {
+    grid-area: elementos;
+    background-color: cadetblue;
+    width: 200px;
+}
+
+.body {
+    grid-area: body;
+    background-color: cadetblue;
+}
+
+.estilos {
+    grid-area: estilos;
+    background-color: cadetblue;
+    width: 200px;
+}
