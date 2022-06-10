@@ -14,7 +14,12 @@
     <section class="layout">
         <div class="elementos">
             <h2>ELEMENTOS</h2>
-            <button id="boton" onclick="agregarbtn()">Boton</button>
+            <button id="boton" onclick="agregarbtn()">Boton</button> <br><br>
+            <button id="input" onclick="agregarinput()">Input</button><br><br>
+            <button id="table" onclick="agregartabla()">Tabla</button><br><br>
+            <button id="a" onclick="agregarlink()">Link</button><br><br>
+            <button id="select" onclick="agregarselect()">Select</button><br><br>
+            <button id="select" onclick="agregarimagen()">Imagen</button><br>
         </div>
         <div class="body" id="body">
 
@@ -34,14 +39,26 @@
             <input type="color" name="" id="colorletra" onchange="colorletra()"><br><br>
             Estilo del borde <br>
             <select name="borde" id="border" onchange="border()">
-                <option value="ini">--------------</option>
+                <option value="ini" disabled selected>--------------</option>
                 <option value="none">border-style: none</option>
                 <option value="dotted">border-style: dotted</option>
                 <option value="inset">border-style: inset</option>
                 <option value="solid">border-style: dashed solid</option>
-            </select>
+            </select><br><br>
+            Estilo borderRadius <br>
+            <select name="borde" id="radius" onchange="radius()">
+                <option value="n" disabled selected>--------------</option>
+                <option value="50%">50%</option>
+                <option value="50px 20px">50px 20px</option>
+                <option value="25px">25px</option>
+            </select><br>
             Color de borde <br>
             <input type="color" name="" id="colorborde" onchange="colorborde()"><br><br>
+            Animación <br>
+            <button onclick="play()">Play</button>
+            <button onclick="pause()">Pause</button>
+
+            
 
         </div>
     </section>

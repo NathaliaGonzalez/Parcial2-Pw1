@@ -24,3 +24,22 @@
     background-color: cadetblue;
     width: 200px;
 }
+
+.animacion {
+    /*width: 100px;
+    height: 100px;
+    background: red;*/
+    position: relative;
+    animation: mymove 2s infinite;
+    animation-play-state: paused;
+}
+
+@keyframes mymove {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 200px;
+    }
+}
