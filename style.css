@@ -1,6 +1,6 @@
 .layout {
     width: 100%;
-    height: 768px;
+    height: 735px;
 
     display: grid;
     grid:
@@ -12,6 +12,7 @@
     grid-area: elementos;
     background-color: cadetblue;
     width: 200px;
+    text-align: center;
 }
 
 .body {
@@ -23,6 +24,7 @@
     grid-area: estilos;
     background-color: cadetblue;
     width: 200px;
+    text-align: center;
 }
 
 .animacion {
@@ -42,4 +44,10 @@
     to {
         left: 200px;
     }
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
 }

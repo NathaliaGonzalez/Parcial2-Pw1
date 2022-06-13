@@ -14,51 +14,72 @@
     <section class="layout">
         <div class="elementos">
             <h2>ELEMENTOS</h2>
-            <button id="boton" onclick="agregarbtn()">Boton</button> <br><br>
-            <button id="input" onclick="agregarinput()">Input</button><br><br>
-            <button id="table" onclick="agregartabla()">Tabla</button><br><br>
-            <button id="a" onclick="agregarlink()">Link</button><br><br>
-            <button id="select" onclick="agregarselect()">Select</button><br><br>
-            <button id="select" onclick="agregarimagen()">Imagen</button><br>
+            <button id="boton" style="width: 40%;" onclick="agregarbtn()">Boton</button> <br><br>
+            <button id="input" style="width: 40%;" onclick="agregarinput()">Input</button><br><br>
+            <button id="textarea" style="width: 40%;" onclick="agregartextarea()">Textarea</button><br><br>
+            <button id="lista" style="width: 40%;" onclick="agregarlista()">Lista</button><br><br>
+            <button id="table" style="width: 40%;" onclick="agregartabla()">Tabla</button><br><br>
+            <button id="a" style="width: 40%;" onclick="agregarlink()">Link</button><br><br>
+            <button id="select" style="width: 40%;" onclick="agregarselect()">Select</button><br><br>
+            <button id="select" style="width: 40%;" onclick="agregarimagen()">Imagen</button><br>
         </div>
         <div class="body" id="body">
 
         </div>
         <div class="estilos">
             <h2>ESTILOS</h2>
-            Tamaño<br>
-            <input type="radio" name="tamaño" value="1" onclick="tamano('pequeno')">Pequeño
-            <br>
-            <input type="radio" name="tamaño" value="2" onclick="tamano('mediano')">Mediano
-            <br>
-            <input type="radio" name="tamaño" value="3" onclick="tamano('grande')">Grande
+
+            Elementos <br>
+            <select name="" onchange="validar()" id="selectel">
+                <option value="">Sin elemento</option>
+            </select>
+            <button onclick="eliminar()">Eliminar</button>
             <br><br>
+
+            Tamaño<br>
+            <div id="tama">
+                <input type="radio" name="tamaño" value="1"  onclick="tamano('pequeno')">Pequeño
+                <br>
+                <input type="radio" name="tamaño" value="2"  onclick="tamano('mediano')">Mediano
+                <br>
+                <input type="radio" name="tamaño" value="3"  onclick="tamano('grande')">Grande
+            </div>
+            <div id="tamaimg" style="display: none;">
+                <input type="radio" name="tamaño" value="1"  onclick="tamaimg('pequeno')">Pequeño
+                <br>
+                <input type="radio" name="tamaño" value="2"  onclick="tamaimg('mediano')">Mediano
+                <br>
+                <input type="radio" name="tamaño" value="3"  onclick="tamaimg('grande')">Grande
+            </div><br><br>
+
             Color de fondo<br>
-            <input type="color" name="" id="color" onchange="color()"><br><br>
-            Color de texto <br>
-            <input type="color" name="" id="colorletra" onchange="colorletra()"><br><br>
+            <input type="color" name="" id="color" style="width: 45%;" onchange="color()"><br><br>
+            <label for="" id="colortext">Color de texto</label><br>
+            <input type="color" name="" id="colorletra" style="width: 45%;" onchange="colorletra()"><br><br>
+
             Estilo del borde <br>
-            <select name="borde" id="border" onchange="border()">
+            <select name="borde" id="border" style="width: 80%;" onchange="border()">
                 <option value="ini" disabled selected>--------------</option>
                 <option value="none">border-style: none</option>
                 <option value="dotted">border-style: dotted</option>
                 <option value="inset">border-style: inset</option>
                 <option value="solid">border-style: dashed solid</option>
             </select><br><br>
-            Estilo borderRadius <br>
-            <select name="borde" id="radius" onchange="radius()">
-                <option value="n" disabled selected>--------------</option>
-                <option value="50%">50%</option>
-                <option value="50px 20px">50px 20px</option>
-                <option value="25px">25px</option>
-            </select><br>
-            Color de borde <br>
-            <input type="color" name="" id="colorborde" onchange="colorborde()"><br><br>
-            Animación <br>
-            <button onclick="play()">Play</button>
-            <button onclick="pause()">Pause</button>
 
-            
+            Estilo borderRadius <br>
+            <p>
+                <button id="disminuir" style="width: 40%;" onclick="radius(1)">-</button>
+                <button id="aumentar" style="width: 40%;" onclick="radius(2)">+</button>
+            </p><br>
+
+            Color de borde <br>
+            <input type="color" name="" id="colorborde" style="width: 45%;" onchange="colorborde()"><br><br>
+
+            Animación <br>
+            <button style="width: 40%;" onclick="play()">Play</button>
+            <button style="width: 40%;" onclick="pause()">Pause</button>
+
+
 
         </div>
     </section>
