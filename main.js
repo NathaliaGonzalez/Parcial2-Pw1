@@ -211,6 +211,18 @@ function colorborde() {
     let select = document.getElementById("selectel").value;
     var colorborde = document.getElementById('colorborde').value;
     document.getElementById("el" + select).style.borderColor = colorborde;
+
+}
+
+function moverhori() {
+    let select = document.getElementById("selectel").value;
+    let posicion = document.getElementById("horizontal").value;
+    document.getElementById("el" + select).style.marginLeft = posicion+"px";
+}
+function moververtical() {
+    let select = document.getElementById("selectel").value;
+    let posicion = document.getElementById("vertical").value;
+    document.getElementById("el" + select).style.marginTop = posicion+"px";
 }
 
 function play() {
